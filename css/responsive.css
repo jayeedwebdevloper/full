@@ -1,0 +1,1743 @@
+@media only screen and (min-width: 1400px) {
+    .btn-4 {
+        width: 269px;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 2365px) {
+    .maintenance-res .maintain {
+        padding-top: 26%;
+        padding-bottom: 28%;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 26%;
+        padding-bottom: 28%;
+    }
+}
+
+@media only screen and (max-width: 2285px) {
+    .maintain {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 2192px) {
+    .maintenance-res .maintain {
+        padding-top: 24%;
+        padding-bottom: 24%;
+    }
+
+    .maintenance-res .maintain .head {
+        font-size: 60px;
+    }
+
+    .maintenance-res .maintain .sub-head {
+        font-size: 35px;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 30px;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 24%;
+        padding-bottom: 24%;
+    }
+
+    .maintenance-dark-res .maintain .head {
+        font-size: 60px;
+    }
+
+    .maintenance-dark-res .maintain .sub-head {
+        font-size: 35px;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 2068px) {
+    .maintain {
+        padding-top: 28%;
+        padding-bottom: 28%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 31% !important;
+        padding-bottom: 31% !important;
+    }
+
+    .maintenance-res .maintain .head {
+        font-size: 50px;
+    }
+
+    .maintenance-res .maintain .sub-head {
+        font-size: 25px;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 20px;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 31% !important;
+        padding-bottom: 31% !important;
+    }
+
+    .maintenance-dark-res .maintain .head {
+        font-size: 50px;
+    }
+
+    .maintenance-dark-res .maintain .sub-head {
+        font-size: 25px;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1968px) {
+    .contact {
+        padding-top: 11%;
+        padding-bottom: 11%;
+    }
+}
+
+@media only screen and (max-width: 1892px) {
+    .maintain {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+
+    .maintenance-res .maintain .head {
+        font-size: 40px;
+    }
+
+    .maintenance-res .maintain .sub-head {
+        font-size: 20px;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 18px;
+    }
+    .maintenance-dark-res .maintain .head {
+        font-size: 40px;
+    }
+
+    .maintenance-dark-res .maintain .sub-head {
+        font-size: 20px;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .maintain {
+        padding-top: 23%;
+        padding-bottom: 23%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 27% !important;
+        padding-bottom: 27% !important;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 27% !important;
+        padding-bottom: 27% !important;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .maintain {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .contact {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 1520px) {
+    .maintain {
+        padding-top: 17%;
+        padding-bottom: 17%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 1415px) {
+    .maintain {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .maintain {
+        padding-top: 7%;
+        padding-bottom: 15%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+
+    .maintenance-res .maintain .head {
+        font-size: 30px;
+    }
+
+    .maintenance-res .maintain .sub-head {
+        font-size: 20px;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 18px;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 25% !important;
+        padding-bottom: 25% !important;
+    }
+
+    .maintenance-dark-res .maintain .head {
+        font-size: 30px;
+    }
+
+    .maintenance-dark-res .maintain .sub-head {
+        font-size: 20px;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 18px;
+    }
+
+
+    .btn-red {
+        width: 43%;
+    }
+
+    .btn-4 {
+        margin-top: 15%;
+    }
+
+    .btn-red2 {
+        width: 33%;
+    }
+
+
+    .group-call-1 {
+        margin-top: 2% !important;
+    }
+
+    .btn-mode {
+        padding: 0 5px;
+    }
+
+    .btn-mode-dark {
+        padding: 0 5px;
+    }
+
+
+
+    .btn-red:hover {
+        background: linear-gradient(to left, #e92428, #b02022);
+        color: #fff;
+        width: 48%;
+    }
+
+    .btn-red2:hover {
+        background: linear-gradient(to left, #e92428, #b02022);
+        color: #fff;
+        width: 38%;
+    }
+
+    .lineShape {
+        background-size: 60%;
+    }
+
+    .lineShape-dark {
+        background-size: 60%;
+    }
+
+    .red-content h3 {
+        font-size: 20px;
+    }
+
+    .red-content p {
+        font-size: 14px;
+    }
+
+    .chose-img {
+        width: 90% !important;
+    }
+
+    .choose-content h5 {
+        font-size: 18px;
+        padding-left: 5% !important;
+    }
+
+    .res-choose {
+        padding-left: 5% !important;
+    }
+
+    .btn-3 {
+        width: 60% !important;
+    }
+
+    .card-about-3 {
+        height: 350px;
+    }
+
+    .cont {
+        padding-left: 20px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1392px) {
+    .maintenance-res .maintain {
+        padding-top: 23% !important;
+        padding-bottom: 23% !important;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 23% !important;
+        padding-bottom: 23% !important;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .bottom-red {
+        margin-top: -10%;
+    }
+
+    .contact h1 {
+        font-size: 35px;
+    }
+
+    .shape2 {
+        left: -14%;
+        bottom: 13%;
+    }
+
+    .shape3 {
+        right: -14%;
+        top: 8%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 22% !important;
+        padding-bottom: 22% !important;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 22% !important;
+        padding-bottom: 22% !important;
+    }
+}
+
+@media only screen and (max-width: 1268px) {
+    .maintain {
+        padding-top: 1%;
+        padding-bottom: 15%;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 24% !important;
+        padding-bottom: 24% !important;
+    }
+
+    .maintenance-res .maintain .head {
+        font-size: 30px;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 15px;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 24% !important;
+        padding-bottom: 24% !important;
+    }
+
+    .maintenance-dark-res .maintain .head {
+        font-size: 30px;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 15px;
+    }
+
+    .contact {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .maintain {
+        padding-top: 1%;
+        padding-bottom: 13%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .maintenance {
+        background-color: #fff;
+    }
+
+    .maintenance-dark {
+        background-color: #000000;
+    }
+
+    .maintenance-res {
+        background-color: #fff;
+    }
+
+    .maintenance-dark-res {
+        background-color: #000000;
+    }
+
+    .maintain {
+        padding-top: 7%;
+        padding-bottom: 13%;
+    }
+
+    .maintain h2 {
+        font-size: 28px;
+    }
+
+    .maintain p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .maintain ul {
+        padding-top: 0 !important;
+        font-size: 14px;
+    }
+
+    .contact h1 {
+        font-size: 30px;
+    }
+
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .phone-number {
+        font-size: 14px;
+    }
+
+    .btn-red {
+        width: 50%;
+    }
+
+    .btn-4 {
+        width: 25%;
+    }
+
+    .btn-red:hover {
+        width: 55%;
+    }
+
+    .shape1 {
+        margin-top: 5%;
+    }
+
+    .cart-img {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .red-content {
+        padding-left: 1% !important;
+    }
+
+    .red-content h3 {
+        font-size: 18px;
+    }
+
+    .red-content p {
+        font-size: 12px;
+    }
+
+    .choose-content img {
+        width: 25% !important;
+    }
+
+    .choose-box {
+        height: 80px;
+        width: 80px;
+    }
+
+    .chose-img {
+        width: 100% !important;
+    }
+
+    .circle-1 {
+        transform: translate(-75%);
+    }
+
+    .circle-1 h5 {
+        font-size: 20px;
+    }
+
+    .circle-1 p {
+        font-size: 15px;
+    }
+
+    .circle-2 {
+        position: absolute;
+        transform: translate(-92%, 180%);
+    }
+
+    .circle-2 h5 {
+        font-size: 20px;
+    }
+
+    .circle-2 p {
+        font-size: 15px;
+        padding: 0 10%;
+        padding-right: 0;
+    }
+
+    .circle-3 {
+        position: absolute;
+        transform: translate(0, 200%);
+    }
+
+    .circle-3 h5 {
+        font-size: 20px;
+    }
+
+    .circle-3 p {
+        font-size: 15px;
+    }
+
+    .circle-4 {
+        position: absolute;
+        transform: translate(92%, 220%);
+    }
+
+    .circle-4 h5 {
+        font-size: 20px;
+    }
+
+    .circle-4 p {
+        font-size: 15px;
+        padding: 0 20% !important;
+        padding-left: 0 !important;
+    }
+
+    .circle-5 {
+        position: absolute;
+        transform: translate(75%);
+    }
+
+    .circle-5 h5 {
+        font-size: 20px;
+    }
+
+    .circle-5 p {
+        font-size: 15px;
+    }
+
+    .circle-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-3 {
+        width: 70% !important;
+    }
+
+    .my-btn {
+        width: 160px;
+        height: 45px;
+    }
+
+    .arrow {
+        height: 35px;
+        width: 35px;
+        margin-left: 20px;
+    }
+
+    .my-btn:hover {
+        width: 170px;
+    }
+
+    .my-btn:hover .arrow {
+        margin-left: 30px;
+    }
+
+    .call-btn {
+        height: 55px;
+        padding: 5px;
+        padding-right: 12px;
+        margin-top: 7px;
+    }
+
+    .call-btn-2 {
+        margin-top: 3%;
+    }
+
+    .phone-icon-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .phone-icon-btn img {
+        width: 50%;
+    }
+
+    .phone-number-btn {
+        font-size: 13px;
+    }
+
+    .number-btn {
+        font-size: 15px;
+    }
+
+    .line-btn {
+        top: 35px;
+    }
+
+    .menu {
+        width: 55px;
+        height: 55px;
+        margin-top: 2px;
+    }
+
+    .location-btn img {
+        padding-right: 0;
+        width: 15%;
+    }
+
+    .review-btn {
+        width: 178px;
+    }
+
+    .review-btn:hover {
+        width: 188px;
+    }
+
+    .card-about-3 {
+        height: 390px;
+    }
+
+    .user-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .brand-icon {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .user-title {
+        font-size: 15px;
+    }
+
+    .user-sub-title {
+        font-size: 12px;
+    }
+
+    .box-second h4 {
+        font-size: 20px;
+    }
+
+    .box-second h5 {
+        font-size: 17px;
+    }
+
+    .requset-btn {
+        width: 188px;
+    }
+
+    .requset-btnz:hover {
+        width: 192px;
+    }
+
+    .appoint-button {
+        width: 400px;
+        padding-left: 73px;
+    }
+
+    .appoint-button:hover {
+        width: 420px;
+        background: #000;
+    }
+
+    .appoint-button:hover .arrow {
+        margin-left: 70px;
+    }
+
+    .appoint-button .arrow {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 1192px) {
+    .bottom-red {
+        margin-top: -10%;
+    }
+
+    .shape2 {
+        left: -14%;
+        bottom: 13%;
+    }
+
+    .shape3 {
+        right: -14%;
+        top: 8%;
+    }
+
+    .logo img {
+        width: 58%;
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .bottom-red {
+        margin-top: -7%;
+    }
+
+    .shape2 {
+        left: -20%;
+    }
+
+    .shape3 {
+        right: -20%;
+    }
+
+    .maintain {
+        padding-top: 1%;
+        padding-bottom: 13%;
+    }
+
+    .maintain h2 {
+        font-size: 28px;
+    }
+
+    .maintain p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .maintain ul {
+        padding-top: 0 !important;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .circle-area {
+        width: 400px;
+        height: 400px;
+    }
+
+    .circle-3 {
+        position: absolute;
+        transform: translate(0, 160%);
+    }
+
+    .btn-mode {
+        width: 120px;
+    }
+
+    .btn-mode-dark {
+        width: 120px;
+    }
+    .res-call-24 {
+        padding-top: 2px !important;
+        font-size: 11px !important;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .maintain {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .maintain h2 {
+        font-size: 25px;
+    }
+
+    .maintain p {
+        font-size: 11px;
+    }
+
+    .maintain ul {
+        font-size: 12px;
+    }
+
+    .bottom-red {
+        margin-top: -7%;
+    }
+
+    .contact h1 {
+        font-size: 27px;
+    }
+
+    .group-call-1 {
+        width: 25% !important;
+    }
+
+    .shape2 {
+        left: -25%;
+        transform: rotate(3deg);
+    }
+
+    .shape3 {
+        right: -25%;
+        transform: rotate(3deg);
+    }
+
+
+
+    .circle-area {
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-3 {
+        position: absolute;
+        transform: translate(0, 140%);
+    }
+
+    .circle-2 {
+        position: absolute;
+        transform: translate(-92%, 170%);
+    }
+
+    .circle-3 {
+        position: absolute;
+        transform: translate(0, 190%);
+    }
+
+    .circle-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle-1 h5 {
+        font-size: 17px;
+    }
+
+    .circle-1 p {
+        font-size: 12px;
+    }
+
+    .circle-2 h5 {
+        font-size: 17px;
+    }
+
+    .circle-2 p {
+        font-size: 12px;
+        padding: 0 10%;
+        padding-right: 0;
+    }
+
+    .circle-3 h5 {
+        font-size: 17px;
+    }
+
+    .circle-3 p {
+        font-size: 12px;
+    }
+
+    .circle-4 h5 {
+        font-size: 17px;
+    }
+
+    .circle-4 p {
+        font-size: 12px;
+        padding: 0 20% !important;
+        padding-left: 0 !important;
+    }
+
+    .circle-5 h5 {
+        font-size: 17px;
+    }
+
+    .circle-5 p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .maintain h2 {
+        font-size: 22px;
+    }
+
+    .maintain p {
+        font-size: 10px;
+    }
+
+    .maintain ul {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .custom-2 {
+        text-decoration-color: transparent;
+    }
+
+    .btn-phone-icon {
+        display: none;
+    }
+    .hr-card {
+        display: none;
+    }
+    .border-right {
+        border-right: 2px solid #e5e5e5;
+    }
+    .border-right-dark {
+        border-right: 2px solid #333333;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .reflect-img img {
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+    }
+    .hr-card {
+        display: block;
+    }
+        .border-right {
+            border-right: 0;
+        }
+        .border-right-dark {
+            border-right: 0;
+        }
+
+    .d-mobile {
+        display: none;
+    }
+
+    #nameMode {
+        display: none;
+    }
+
+    #dark {
+        display: none;
+    }
+
+    #nameMode-dark {
+        display: none;
+    }
+
+    #light-dark {
+        display: none;
+    }
+
+    .btn-mode {
+        padding: 4px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .btn-mode-dark {
+        padding: 4px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #light {
+        width: 35px;
+        height: 35px;
+    }
+
+    .maintenance {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .maintenance-dark {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .maintenance-res {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .maintenance-dark-res {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .contact {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .contact-dark {
+        background-image: linear-gradient(to top, #e92428,
+                #b02022);
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .contact h1 {
+        font-size: 35px;
+    }
+
+    .mobile-btn-24 {
+        display: block;
+        width: 70%;
+    }
+
+    .dispay {
+        display: none !important;
+    }
+
+    .img-maintin {
+        display: block;
+    }
+
+    .shap8 {
+        display: none;
+    }
+
+    .maintain h2 {
+        font-size: 42px;
+        padding-bottom: 2%;
+    }
+
+    .maintain p {
+        font-size: 20px;
+        padding: 2% 0;
+    }
+
+    .maintain ul {
+        font-size: 19px;
+    }
+
+    .maintenance-res .maintain {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .maintenance-res .maintain .head {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .maintenance-res .maintain .details {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .maintenance-res .maintain .sub-head {
+        text-align: center;
+    }
+    .maintenance-dark-res .maintain {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .maintenance-dark-res .maintain .head {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .maintenance-dark-res .maintain .details {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .maintenance-dark-res .maintain .sub-head {
+        text-align: center;
+    }
+
+    .res {
+        display: block;
+    }
+
+    .btn-1 {
+        display: none !important;
+    }
+
+    .btn-2 {
+        display: block !important;
+    }
+
+    .btn-4 {
+        width: 40%;
+        margin-top: 5%;
+    }
+
+    .menu-btn {
+        padding: 0;
+    }
+
+    .hero {
+        background: transparent;
+        text-align: center;
+    }
+
+    .hero-res {
+        background: transparent;
+        text-align: center;
+    }
+
+    .btn-red {
+        width: 25%;
+        padding: 2% 5%;
+        padding-right: 0;
+    }
+
+    .btn-red2 {
+        width: 23%;
+        padding: 2% 0;
+        padding-left: 3%;
+    }
+
+
+    .btn-red:hover {
+        width: 27%;
+    }
+
+    .btn-red2:hover {
+        width: 25%;
+    }
+
+    .hero {
+        padding-top: 2%;
+    }
+
+    .hero-res {
+        padding-top: 2%;
+    }
+
+    .shape1 {
+        margin-top: -10%;
+    }
+
+
+
+    .bottom-red {
+        margin-top: -7%;
+    }
+
+    .shape2 {
+        bottom: 6%;
+        left: -30%;
+        transform: rotate(0deg);
+    }
+
+    .shape3 {
+        right: -25%;
+        top: 3%;
+        transform: rotate(0deg);
+    }
+
+    .menu {
+        width: 45px;
+        height: 45px;
+        margin-top: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .man {
+        padding-top: 10%;
+    }
+
+    .card-about {
+        height: 430px;
+    }
+
+    .card-about-3 {
+        height: 280px;
+    }
+
+    .red-content {
+        padding-left: 0 !important;
+        padding-bottom: 10%;
+    }
+
+    .red-brand {
+        padding-top: 10% I !important;
+    }
+
+    .red-content h3 {
+        font-size: 30px;
+    }
+
+    .red-content p {
+        font-size: 20px;
+    }
+
+    .approach {
+        padding-bottom: 5%;
+    }
+
+    .approach.dark-icon {
+        background-color: #000000 !important;
+    }
+
+    .btn-3 {
+        width: 95% !important;
+    }
+
+    .my-btn {
+        margin: auto;
+        margin-top: 6%;
+    }
+
+    .learn-more {
+        margin: auto;
+        margin-top: 4%;
+        width: 165px;
+    }
+
+
+    .learn-more:hover {
+        width: 175px;
+    }
+
+    .logo img {
+        width: 68%;
+    }
+
+    .call-btn {
+        display: none;
+    }
+
+    .location-btn img {
+        padding-right: 10px;
+    }
+
+    .location-btn-phone {
+        margin: auto;
+        margin-top: 55px;
+    }
+
+    .location-btn-content p {
+        font-size: 15px;
+    }
+
+    .location-btn-content h5 {
+        font-size: 18px;
+    }
+
+    .review-btn {
+        float: none;
+    }
+
+    .user-title {
+        font-size: large;
+    }
+
+    .user-sub-title {
+        font-size: normal;
+    }
+
+    .requset-btn {
+        margin: 3% 0;
+    }
+
+    .box-grand {
+        border-radius: 60% 60% 20px 20px;
+    }
+
+    .box-second h4 {
+        line-height: 30px;
+    }
+
+    .mobile-sec {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .location-btn img {
+        width: 20%;
+    }
+
+    .btn-4 {
+        margin-top: 1%;
+        width: 50% !important;
+    }
+
+    .index {
+        font-size: 25px;
+        width: 98%;
+    }
+
+    .padding {
+        padding-bottom: 35%;
+    }
+
+    .btn-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-2 img {
+        width: 90%;
+    }
+
+
+    .btn-red {
+        width: 32%;
+    }
+
+    .btn-red2 {
+        width: 30%;
+    }
+
+
+    .btn-red:hover {
+        width: 37%;
+    }
+
+    .btn-red2:hover {
+        width: 34%;
+    }
+
+    .lineShape {
+        background: url(../images/line-shape2.png) no-repeat;
+        background-position-x: 10%;
+        background-position-y: center;
+    }
+
+    .lineShape-dark {
+        background: url(../images/line-shape2-dark.png) no-repeat;
+        background-position-x: 10%;
+        background-position-y: center;
+    }
+
+    .card-box {
+        margin: 2% 0;
+    }
+
+    .shape2 {
+        bottom: 6%;
+        left: -50%;
+        transform: rotate(-5deg);
+    }
+
+    .shape3 {
+        right: -45%;
+        top: 3%;
+        transform: rotate(-5deg);
+    }
+
+    .second-card-about {
+        display: none;
+    }
+
+    .card-about {
+        height: 330px;
+    }
+
+    .btn-3 {
+        width: 95% !important;
+    }
+
+    .btn-3 p {
+        font-size: 12px !important;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .location-btn img {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .menu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-phone-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-phone-icon img {
+        width: 100%;
+    }
+
+    .btn-mode {
+        height: 45px;
+        width: 45px;
+    }
+
+    .btn-mode-dark {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .padding {
+        padding-bottom: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .location-map {
+        width: 365px;
+        height: 365px;
+    }
+
+    .location-map-dark {
+        width: 365px;
+        height: 365px;
+    }
+
+    .btn-4 {
+        margin-top: 25%;
+    }
+
+    .red-content h3 {
+        font-size: 25px;
+    }
+
+    .red-content p {
+        font-size: 17px;
+    }
+
+    .appro2 {
+        background-position-x: 12%;
+    }
+
+    .appro2-dark {
+        background-position-x: 12%;
+    }
+
+    .mobile-btn-phone {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .mobile-phone {
+        top: -26%;
+    } 
+
+    .card-about {
+        height: 400px;
+    }
+
+    .email-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .email-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cont p {
+        font-size: 13px;
+    }
+
+    .cont a {
+        font-size: 12px;
+    }
+        .appoint-button {
+            width: 320px;
+            padding-left: 20px;
+        }
+    
+        .appoint-button:hover {
+            width: 330px;
+            background: #000;
+        }
+    
+        .appoint-button:hover .arrow {
+            margin-left: 33px;
+        }
+    
+        .appoint-button .arrow {
+            margin-left: 25px;
+        }
+
+}
+
+@media only screen and (max-width: 468px) {
+    .btn-red {
+        width: 38%;
+    }
+
+
+    .btn-red:hover {
+        width: 42%;
+    }
+
+    .shape2 {
+        bottom: 6%;
+        left: -5%;
+        width: 60%;
+    }
+
+    .shape3 {
+        right: -5%;
+        top: 3%;
+        width: 60%;
+    }
+
+    .card-about {
+        height: 390px;
+    }
+
+    .padding {
+        padding-bottom: 65%;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .btn-red2 {
+        width: 38%;
+    }
+
+    .btn-4 {
+        width: 70% !important;
+    }
+
+    .btn-red2:hover {
+        width: 43%;
+    }
+
+    .logo img {
+        width: 78%;
+    }
+
+    .btn-2 {
+        width: 35px;
+        height: 35px;
+        padding: 2%;
+        padding-top: 1% !important;
+    }
+
+    .card-about2 {
+        height: 470px;
+    }
+
+    .card-about-3 {
+        height: 310px;
+    }
+
+    .card-banner {
+        height: 250px;
+    }
+
+    .btn-2 img {
+        width: 100%;
+    }
+
+    .lineShape {
+        background-position-x: 15%;
+    }
+
+    .lineShape-dark {
+        background-position-x: 15%;
+    }
+
+    .card-box {
+        margin: 2% 0;
+    }
+
+    .choose-content h5 {
+        font-size: 15px;
+        padding-left: 8% !important;
+    }
+
+    .res-choose {
+        padding-left: 8% !important;
+    }
+
+    .btn-3 {
+        width: 95% !important;
+    }
+
+    .btn-3 p {
+        font-size: 10px !important;
+    }
+
+    .card-about {
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .location-btn img {
+        width: 15%;
+    }
+
+    .btn-red {
+        width: 42%;
+    }
+
+    .btn-red:hover {
+        width: 45%;
+    }
+
+    .btn-4 {
+        margin-top: 35%;
+    }
+
+    .btn-red2 {
+        width: 50%;
+    }
+
+    .btn-red2:hover {
+        width: 55%;
+    }
+
+    .mobile-btn-phone {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .mobile-btn-24 {
+        padding-top: 8%;
+    }
+
+    .mobile-phone {
+        top: -30%;
+    }
+
+    .padding {
+        padding-bottom: 35%;
+    }
+
+    .location-map {
+        width: 295px;
+        height: 295px;
+    }
+
+    .location-map-dark {
+        width: 295px;
+        height: 295px;
+    }
+
+    .card-about {
+        height: 430px;
+    }
+
+    .card-about-3 {
+        height: 370px;
+    }
+
+    .choose-content h5 {
+        padding-left: 12% !important;
+    }
+
+    .res-choose {
+        padding-left: 12% !important;
+    }
+
+    .user-title {
+        font-size: medium;
+    }
+
+    .user-icon,
+    .brand-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .brand-icon img {
+        width: 75%;
+    }
+         .appoint-button {
+             width: 290px;
+             padding-left: 15px;
+             font-size: 15px;
+         }
+    
+         .appoint-button:hover {
+             width: 300px;
+             background: #000;
+         }
+    
+         .appoint-button:hover .arrow {
+             margin-left: 23px;
+         }
+    
+         .appoint-button .arrow {
+             margin-left: 13px;
+         }
+}
+
+@media only screen and (max-width: 350px) {
+    .btn-red {
+        width: 48%;
+    }
+
+    .btn-red:hover {
+        width: 50%;
+    }
+
+    .choose-content h5 {
+        padding-left: 17% !important;
+    }
+
+    .res-choose {
+        padding-left: 17% !important;
+    }
+
+    .appro2 {
+        background-position-x: 16%;
+    }
+
+    .appro2-dark {
+        background-position-x: 16%;
+    }
+
+    .card-about {
+        height: 480px;
+    }
+
+    .mobile-sec {
+        padding: 0;
+    }
+}

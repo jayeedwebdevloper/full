@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stat</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="dark-body">
+    <!-- loader -->
+    <!-- <div id="loader"><img class="logo-load" src="images/logo.png" alt="stat"></div> -->
+
+    <!-- scrol-top -->
+    <div id="scroll"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg></div>
+
+
+    <!-- header and hero image section -->
+    <header class="pt-3">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo-dark.png" alt="stat"></a>
+                </div>
+                <div class="contact-menu">
+                    <button class="btn call-btn rounded-pill dark-bg shadow-dark">
+                        <div class="phone-icon-btn-dark"><img src="images/dark-phone.png" alt="phone"></div>
+                        <p class="phone-number-btn light-text"><b>CALL US 24/7</b> not only in <b>Emergency</b><br><b
+                                class="number-btn light-text">(403) 226-6066</b>
+                        <div class="line-btn"></div>
+                        </p>
+
+                    </button>
+                    <button class="btn btn-phone-icon btn-dark-mobile"><img src="images/phoneIcon.png" alt="phone"></button>
+                    <button class="btn menu-btn bg-transparent border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="menu"
+                            src="images/menu.png" alt="menu"></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"><img class="w-50" src="images/logo-dark.png"
+                                    alt="stat" class="w-25"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link fs-4">Home</a></li>
+                                <li class="nav-item"><a href="residential-dark.html" class="nav-link fs-4">Residential</a>
+                                </li>
+                                <li class="nav-item"><a href="Services-Maintenance-dark.html"
+                                        class="nav-link fs-4">Services-Maintenance</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link fs-4">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-mode-dark">
+                    <a href="residential.html" class="btn btn-mode-dark rounded-pill" id="mode-dark"><svg id="light-dark"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-sun-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </svg><span id="nameMode-dark">DARK<br>MODE</span><svg id="dark-dark" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            <path
+                                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <section class="hero-res">
+            <div class="container">
+                <div class="row g-1 align-items-center">
+                    <div class="col-12 col-lg-4">
+                        <div class="hero-content">
+                            <h3 class="fw-bold">Heating or Cooling Problem and in
+                                Need of Reliable, Responsive, and
+                                Affordable Service? Call Us.</h3>
+                            <p class="fw-semibold">Transform Your Home's Comfort and Efficiency
+                                with STAT Climate Control Solutions: Your
+                                One-Stop Shop for ALL Your Mechanical
+                                HVAC Needs.</p>
+
+                            <button class="btn location-btn-phone rounded-pill mx-auto ms-lg-0">
+                                <div class="location-icon-btn"><img src="images/resident-icon.png" alt="call us"></div>
+                                <div class="location-btn-content text-start">
+                                    <p class="text-white">CALL US 24/7</p>
+                                    <h5 class="text-white">(403) 226-6066</h5>
+                                </div>
+                                </p>
+
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <img class="w-100 res" src="images/hero2.png" alt="stat">
+            <img class="w-100 shape1 pt-xxl-3 pt-2" src="images/shape-res-dark.png" alt="stat">
+        </section>
+    </header>
+    <!-- about -->
+    <section class="about dark-bg pt-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-9">
+                    <h2 class="fw-bold light-text text-center text-lg-start">What our customers say about us</h2>
+                    <div class="review py-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <div class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <p class="ps-2 m-0"><b>5.0</b> rating of <b>23</b> reviews</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <a href="#" class="btn my-btn review-btn rounded-pill">View Reviews <div class="arrow"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></div></a>
+                </div>
+
+            </div>
+            <div class="container-mine review-res">
+                <button id="prev" class="btn arrow-btn-2 card-bg-dark shadow-dark rounded-circle border-5 d-none d-lg-block"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg></button>
+                <div class="contentsli" id="content">
+                    <div class="contentst py-3 px-2">
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon sky-blue">
+                                            <p>G</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Gregory Davis</b></p>
+                                            <p class="text-secondary user-sub-title">(Professionalism, Punctuality)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>STAT Climate control has provided
+                                        excellent service to my business and facilities for over 8 years. They are
+                                        efficient, professional and highly skilled. They have earned our trust
+                                        and are my number one
+                                        recommendation for HVAC in Calgary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon sky-blue">
+                                            <img src="images/user-icon.png" alt="user">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Ralph Birchard</b></p>
+                                            <p class="text-secondary user-sub-title">(Punctuality, Quality)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>We purchased a home air
+                                        conditioner from a small company that closed shop and was unable and unwilling
+                                        to compensate us for a defective coil.
+                                        Sean of Stat stepped up, sent Greg over and got us back on track.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon orange">
+                                            <p>G</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Gregory Davis</b></p>
+                                            <p class="text-secondary user-sub-title">(Professionalism)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>I was so impressed at how prompt the technician was to show up at my door as
+                                        stated, fix my heated flooring issue and
+                                        everything is working
+                                        perfectly. It was a pleasure to have found such a great dependable
+                                        company.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon sky-blue">
+                                            <p>G</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Gregory Davis</b></p>
+                                            <p class="text-secondary user-sub-title">(Professionalism, Punctuality)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>STAT Climate control has provided
+                                        excellent service to my business and facilities for over 8 years. They are
+                                        efficient, professional and highly skilled. They have earned our trust
+                                        and are my number one
+                                        recommendation for HVAC in Calgary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon sky-blue">
+                                            <img src="images/user-icon.png" alt="user">
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Ralph Birchard</b></p>
+                                            <p class="text-secondary user-sub-title">(Punctuality, Quality)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>We purchased a home air
+                                        conditioner from a small company that closed shop and was unable and unwilling
+                                        to compensate us for a
+                                        defective coil.
+                                        Sean of Stat stepped up, sent Greg over and got us back on track.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12 shr">
+                            <div class="card-about-3 card-bg-dark shadow-dark rounded-5 py-2 pt-3 px-3">
+                                <div class="row align-items-center">
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="user-icon orange">
+                                            <p>G</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-xxl-8 col-lg-7 ps-4">
+                                        <div class="user-id">
+                                            <p class="user-title"><b>Gregory Davis</b></p>
+                                            <p class="text-secondary user-sub-title">(Professionalism)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-2 col-lg-2">
+                                        <div class="brand-icon text-end">
+                                            <img src="images/google-user.png" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="review py-3">
+                                            <div class="d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content p-2">
+                                    <p>I was so impressed at how prompt the technician was to show up at my door as
+                                        stated, fix my heated
+                                        flooring issue and
+                                        everything is working
+                                        perfectly. It was a pleasure to have found such a great dependable
+                                        company.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next" class="btn arrow-btn-2 card-bg-dark shadow-dark rounded-circle border-5 d-none d-lg-block"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></button>
+            </div>
+            <div class="col-12 d-block mx-auto text-center d-lg-none">
+                <div class="row justify-content-center">
+                    <div class="text-end col-6 d-flex justify-content-end"><button id="prev1"
+                            class="btn arrow-btn-2 card-bg-dark shadow-dark rounded-circle border-5"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                            </svg></button>
+                    </div>
+                    <div class="text-start col-6"><button id="next1"
+                            class="btn arrow-btn-2 card-bg-dark shadow-dark rounded-circle border-5"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do best section -->
+    <section class="best dark-bg pb-2">
+        <div class="container">
+            <h1 class="text-center fw-bold light-text">What We Do Best</h1>
+            <div class="row g-3 justify-content-center lineShape-dark mt-5">
+                <div class="col-12 col-md-4">
+                    <div class="card-box d-flex d-md-block">
+                        <div
+                            class="mx-auto me-4 me-md-auto cart-img dark-icon d-flex justify-content-center align-items-center rounded-circle shadow px-4 py-5">
+                            <img src="images/cart-1-dark.png" alt="installation">
+                        </div>
+                        <div class="card-sec pt-3">
+                            <h3 class="text-start text-md-center fw-semibold light-text">Installation</h3>
+                            <p class="text-start text-md-center light-text fw-semibold">Lorem ipsum dolor sit amet, cons
+                                itetur adipiscing elit. Fusce egestas purus ut tincidunt accumsan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-box d-flex d-md-block">
+                        <div
+                            class="mx-auto me-4 me-md-auto dark-icon cart-img d-flex justify-content-center align-items-center rounded-circle shadow p-5">
+                            <img src="images/cart-2-dark.png" alt="installation">
+                        </div>
+                        <div class="card-sec pt-3">
+                            <h3 class="text-start text-md-center fw-semibold light-text">Repair</h3>
+                            <p class="text-start text-md-center light-text fw-semibold">Lorem ipsum dolor sit amet, cons
+                                itetur adipiscing elit. Fusce egestas purus ut tincidunt accumsan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-box d-flex d-md-block">
+                        <div
+                            class="mx-auto me-4 me-md-auto cart-img dark-icon d-flex justify-content-center align-items-center rounded-circle shadow p-5">
+                            <img src="images/cart-3-dark.png" alt="installation">
+                        </div>
+                        <div class="card-sec pt-3">
+                            <h3 class="text-start text-md-center fw-semibold light-text">Services</h3>
+                            <p class="text-start text-md-center light-text fw-semibold">Lorem ipsum dolor sit amet, cons
+                                itetur adipiscing elit. Fusce egestas purus ut tincidunt accumsan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- maintenance section -->
+    <section class="maintenance-dark-res">
+        <img class="w-100 rot img-maintin" src="images/shape7-dark.png" alt="stat">
+        <div class="row p-0 item flex-wrap-reverse">
+            <div class="col-12 col-lg-6 p-0 m-0">
+                <div class="img-maintin">
+                    <img class="w-100" src="images/res-meter-dark.png" alt="meter">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-0 m-0">
+                <div class="maintain px-5">
+
+                    <h2 class="fw-bold head text-white man">Residential Heating & <br>
+                        Cooling Services</h2>
+                    <h5 class="pt-4 sub-head text-white">We Are Your Home Comfort Specialists</h5>
+                    <p class="details redish py-4">At STAT Climate Control Solutions, we understand that every home
+                        deserves to be comfortable and energy efficient. That
+                        is why we focus on providing top-notch residential heating and cooling services, backed by our
+                        expertise
+                        in the commercial market. Our knowledgeable and experienced team is
+                        dedicated to keeping your home cozy and comfortable all year round.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Heating & Cooling -->
+    <section class="brand dark-bg py-5">
+        <div class="container">
+            <h1 class="text-center fw-bold">Heating & Cooling</h1>
+            <p class="text-center fw-semibold">We offer a comprehensive range of residential heating and cooling
+                services designed to
+                keep your home's climate systems running at their best:</p>
+            <div class="row g-3 pt-5 mt-3">
+                <div class="col-12 col-lg-6 border-right-dark">
+                    <div class="card-condition-res dark-card">
+                        <div class="card-log">
+                            <div class="dark-icon shadow-dark icon d-flex justify-content-center align-items-center">
+                                <img src="images/heat-dark.png" alt="heat">
+                            </div>
+                        </div>
+                        <h4>Heating Systems:</h4>
+                        <p class="pt-3">We provide installation, maintenance, and repairs for furnaces, heat pumps,
+                            boilers, and more. Our experts will ensure
+                            your home stays warm throughout the colder months.</p>
+                    </div>
+                    <hr class="hr-card">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="card-condition-res dark-card">
+                        <div class="card-log">
+                            <div class="dark-icon shadow-dark icon d-flex justify-content-center align-items-center">
+                                <img src="images/cool-dark.png" alt="cool">
+                            </div>
+                        </div>
+                        <h4>Cooling Systems:</h4>
+                        <p class="pt-3">Stay cool during the hot summer months with our air conditioning installation,
+                            maintenance, and repair services. We work
+                            with
+                            central air systems, ductless mini-splits, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guaranted section -->
+    <section class="guaranty pt-5 pb-3 dark-bg">
+        <div class="container">
+            <div class="box-grand dark-icon">
+                <div class="box-red p-5 rounded-pill">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-3">
+                            <div class="guarent text-center mx-auto pb-lg-0 pb-5">
+                                <img class="img-fluid" src="images/100logo.png" alt="stat">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <div class="red-content text-center mx-auto ps-5">
+                                <h3 class="text-justify text-center text-lg-start pb-3">Enjoy Peace of Mind with Our
+                                    100%
+                                    Satisfaction Guarantee!</h3>
+                                <p class="text-justify text-center text-lg-start">
+                                    At STAT Climate Control Solutions Calgary, customer satisfaction is our top
+                                    priority.
+                                    That's why we offer a 100%
+                                    satisfaction guarantee for the first year after we complete any work on your HVAC
+                                    system. If for any reason you
+                                    are not completely satisfied with the equipment we provide, we will replace or
+                                    repair it
+                                    until you are happy.
+                                    <br>
+                                    <br>
+                                    Don't settle for anything less than the best. Choose STAT Climate Control Solutions
+                                    Calgary for all your heating
+                                    and cooling needs and enjoy peace of mind with our satisfaction guarantee.
+                                </p>
+                                <div class="row red-brand g-2 align-items-center pt-3">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="brand-service pt-3">
+                                            <img class="img-fluid" src="images/red-log.png" alt="A+">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="brand-service pt-3">
+                                            <img class="img-fluid" src="images/red-logo-2.png" alt="Google">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="brand-service pt-3">
+                                            <img class="img-fluid" src="images/red-logo-3.png" alt="Best In">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="brand-service pt-3">
+                                            <img class="img-fluid" src="images/red-logo-4.png" alt="Yelp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row box-second g-3 pt-4 align-items-center">
+                    <div class="col-lg-9 col-12 ps-lg-5 px-3 text-center text-lg-start">
+                        <h4 class="fw-bold ps-lg-4 px-3 m-0 pb-2">Call us on <span class="custom text-danger">(403)
+                                226-6066</span> for all your
+                            mechanical HVAC needs.</h4>
+
+                        <h5 class="m-0 ps-lg-4 px-3">We are available <b>24/7 365 days</b> a year to answer your call
+                            and assist
+                            you.</h5>
+                    </div>
+                    <div class="col-lg-3 col-12 text-center text-lg-start d-flex d-lg-block justify-content-center">
+                        <a href="#" class="btn requset-btn bg-white text-black rounded-pill">Request Quote
+                            <div class="arrow bg-body-secondary" style="--bs-bg-opacity: .5;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="w-100 dark-bg pt-4" src="images/res-shape-dark.png" alt="res">
+
+    <!-- revolution -->
+    <section class="revo res-dark">
+        <div class="container">
+            <h1 class="text-center pb-3 light-text">Revolutionize Your Home Comfort</h1>
+            <p class="text-center pb-5 light-text">In addition to our heating and cooling services, we also offer a variety of other
+                services
+                designed to further improve your home comfort:</p>
+            <div class="card-section-res">
+                <div class="row row-cols-1 row-cols-md-3 g-3 pb-5">
+                    <div class="col">
+                        <div class="card h-100 rounded-5 pb-3 border-0 shadow-sm">
+                            <img src="images/revo-card-1.png" class="card-img-top" alt="Humidity Control">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold px-2">Humidity Control</h5>
+                                <p class="card-text text-secondary px-2">Proper humidity levels are essential for a
+                                    comfortable home. We offer humidifiers and dehumidifiers to help maintain optimal
+                                    indoor humidity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-5 pb-3 border-0 shadow-sm">
+                            <img src="images/revo-card-2.png" class="card-img-top" alt="Security & Fire Life Safety">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold px-2">Security & Fire Life Safety</h5>
+                                <p class="card-text text-secondary px-2">Protect your home and family with
+                                    our security and fire life safety solutions, including alarms, detectors, and
+                                    sprinkler systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-5 pb-3 border-0 shadow-sm">
+                            <img src="images/revo-card-3.png" class="card-img-top" alt="Electrical">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold px-2">Electrical</h5>
+                                <p class="card-text text-secondary px-2">Our certified electricians provide a range of
+                                    services, including rewiring, panel upgrades, and lighting installations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 justify-content-center row-cols-md-3 g-3 pb-5">
+                    <div class="col">
+                        <div class="card h-100 rounded-5 pb-3 border-0 shadow-sm">
+                            <img src="images/revo-card-4.png" class="card-img-top" alt="Indoor Air Quality">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold px-2">Indoor Air Quality</h5>
+                                <p class="card-text text-secondary px-2">Breathe clean, healthy air with our air
+                                    purifiers, filters, and ventilation systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 rounded-5 pb-3 border-0 shadow-sm">
+                            <img src="images/revo-card-5.png" class="card-img-top" alt="Plumbing">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold px-2">Plumbing</h5>
+                                <p class="card-text text-secondary px-2">Trust our team for all your residential
+                                    plumbing needs, from repairs to installations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img class="w-100 dark-bg pt-4 rotate-revo" src="images/res-shape-dark.png" alt="res">
+    <!-- why choose -->
+    <section class="choose pt-5 pb-3 dark-bg">
+        <div class="container">
+            <h1 class="text-center fw-bold light-text pt-3 pb-5 choose-head"><span>Why Choose</span> STAT Climate
+                Control Solutions
+                for Your Home?</h1>
+            <div class="row g-4 pt-3 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="choose-content">
+                        <div class="row align-items-center py-3">
+                            <div class="col-2">
+                                <div
+                                    class="choose-box dark-icon shadow-dark rounded-circle d-flex align-items-center justify-content-center border-5">
+                                    <img src="images/expert-dark.png" alt="expert" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="py-2 px-1 fw-bold m-0 pb-1 res-choose">Expertise:</h5>
+                                <p class="m-0 pt-1 ps-2 res-choose">Our team of certified technicians has years of
+                                    experience working with
+                                    all makes and models of heating and cooling systems.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-2">
+                                <div
+                                    class="choose-box dark-icon shadow-dark rounded-circle d-flex align-items-center justify-content-center border-5">
+                                    <img src="images/customer-dark.png" alt="customer" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="py-2 px-1 fw-bold m-0 pb-1 res-choose">Customer Satisfaction:</h5>
+                                <p class="m-0 pt-1 ps-2 res-choose">Our dedication to exceptional service has earned us
+                                    a reputation for
+                                    excellence in the residential market. Your satisfaction is our top priority.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-2">
+                                <div
+                                    class="choose-box dark-icon shadow-dark rounded-circle d-flex align-items-center justify-content-center border-5">
+                                    <img src="images/recycle-dark.png" alt="energy" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="py-2 px-1 fw-bold m-0 pb-1 res-choose">Energy Efficiency:</h5>
+                                <p class="m-0 pt-1 ps-2 res-choose">We focus on helping homeowners reduce their energy
+                                    consumption and save on utility bills with our energy-efficient
+                                    solutions.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-2">
+                                <div
+                                    class="choose-box dark-icon shadow-dark rounded-circle d-flex align-items-center justify-content-center border-5">
+                                    <img src="images/hour-dark.png" alt="24/7" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="py-2 px-1 fw-bold m-0 pb-1 res-choose">24/7 Emergency Service:</h5>
+                                <p class="m-0 pt-1 ps-2 res-choose">Our dedicated technicians are available around the
+                                    clock to handle any
+                                    emergency HVAC situation that may arise in your home.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center py-3">
+                            <div class="col-2">
+                                <div
+                                    class="choose-box dark-icon shadow-dark rounded-circle d-flex align-items-center justify-content-center border-5">
+                                    <img src="images/abc-dark.png" alt="flexible" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="py-2 px-1 fw-bold m-0 pb-1 res-choose">Flexible Financing Options:</h5>
+                                <p class="m-0 pt-1 ps-2 res-choose">We understand that heating and cooling systems can
+                                    be a significant
+                                    investment. That's why we offer flexible financing options to help make
+                                    your home's comfort more affordable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="rounded-4 text-center mx-auto">
+                        <img class="w-100 chose-img" src="images/why-choose.png" alt="why choose us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment -->
+
+    <section class="appointment">
+        <div class="w-100 dark-bg py-2"></div>
+        <img class="w-100 rot margin-top-1" src="images/shape7-dark.png" alt="stat">
+        <div class="container">
+            <h2 class="text-center pb-4 text-white fw-bold">Schedule Your Appointment Today. <br>
+                <span class="custom-3">Call Us on (403) 226-6066</span>
+            </h2>
+            <p class="text-center redish-white pt-2">Experience the STAT Climate difference in your home by taking
+                advantage of our
+                comprehensive residential heating
+                and cooling services. Contact us today to schedule an appointment, request a quote, or learn more about
+                our offerings.</p>
+
+            <div class="row pt-3 justify-content-center align-items-center">
+                <div class="col-6 col-lg-3">
+                    <div class="email-area">
+                        <div class="row justify-content-center align-items-center mobile-sec">
+                            <div class="col-2 p-0">
+                                <div class="email-icon">
+                                    <img src="images/appoint-mail.png" alt="email">
+                                </div>
+                            </div>
+                            <div class="col-8 p-0 cont">
+                                <p class="m-0 redish-white">Email:</p>
+                                <a href="info@statclimate.ca" class="m-0 redish-white">info@statclimate.ca</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="row justify-content-center align-items-center mobile-sec">
+                        <div class="col-2 p-0">
+                            <div class="email-icon">
+                                <img src="images/appoint-phone.png" alt="phone">
+                            </div>
+                        </div>
+                        <div class="col-8 p-0 cont">
+                            <p class="redish-white m-0">Phone:</p>
+                            <a href="(403) 226-6066" class="redish-white m-0 text-decoration-none fw-semibold">(403)
+                                226-6066</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <a href="#" class="btn my-btn mx-auto res-contact rounded-pill">Contact Us <div class="arrow"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></div></a>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <a href="#" class="btn my-btn mx-auto appoint-button rounded-pill">Schedule Your Appointment Now <div
+                        class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></div></a>
+            </div>
+        </div>
+        <img class="w-100 margin-bottom-1" src="images/shape7-dark.png" alt="stat">
+    </section>
+
+    <!-- service location -->
+    <section class="location dark-bg pt-5 pb-4">
+        <div class="container">
+            <div class="row g-2 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="location-link mx-auto text-center">
+                        <h1 class="fw-bold text-center text-lg-start ms-lg-4">Service Locations</h1>
+                        <div class="row g-2 justify-content-center pt-3">
+                            <div class="col-12 col-sm-6"><a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Cochrane">Cochrane</a></div>
+                            <div class="col-12 col-sm-6">
+                                <a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Okotoks">Okotoks</a>
+                            </div>
+                        </div>
+                        <div class="row g-2 justify-content-center pt-3">
+                            <div class="col-12 col-sm-6"><a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Chestermere">Chestermere</a></div>
+                            <div class="col-12 col-sm-6">
+                                <a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Bragg Creek">Bragg Creek</a>
+                            </div>
+                        </div>
+                        <div class="row g-2 justify-content-center pt-3">
+                            <div class="col-12 col-sm-6"><a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Airdrie ">Airdrie</a></div>
+                            <div class="col-12 col-sm-6">
+                                <a href="#"
+                                    class="btn w-75 location-btn fw-bold dark-icon shadow-dark py-2 my-2 my-sm-0 border-5 px-3"><img
+                                        class="me-2" src="images/location-dark.png" alt="Strathmore ">Strathmore</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn location-btn-phone rounded-pill">
+                        <div class="location-icon-btn"><img src="images/location-phone.png" alt="Location"></div>
+                        <div class="location-btn-content text-start">
+                            <p class="text-white">Phone:</p>
+                            <h5 class="text-white">(403) 226-6066</h5>
+                        </div>
+                        </p>
+
+                    </button>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mapL mx-auto text-center">
+                        <iframe class="rounded-circle shadow location-map-dark"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.9837047188635!2d72.7840301759169!3d40.60818317140952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdaa122221ba23%3A0x54b5fd2f46f136e1!2sOsh%20International%20Airport!5e0!3m2!1sen!2skg!4v1686905653259!5m2!1sen!2skg"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- approach -->
+    <section class="approach dark-bg padding-90-top">
+        <div class="container">
+            <h1 class="text-center fw-bold pb-2">Our Approach</h1>
+            <p class="text-secondary fw-semibold text-center pb-4">STAT Climate Control Solutions is a reputable company
+                that
+                prioritizes reliability, communication,
+                professionalism, and quality workmanship to protect your investment and our reputation. We guarantee</p>
+
+            <div class="appro d-none d-lg-flex justify-content-center align-items-center w-100">
+                <div class="rounded-circle circle-area-dark">
+                    <div class="circle-1">
+                        <div class="d-flex">
+                            <div class="circle-content text-end pe-4">
+                                <h5 class="fw-bold">Professionalism</h5>
+                                <p class="fw-semibold">we pride ourselves on our professionalism
+                                    through our appearance, behavior, and work ethic.</p>
+                            </div>
+                            <div class="circle-box rounded-circle">
+                                <img src="images/profession-dark.png" alt="stat">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-2">
+                        <div class="d-flex">
+                            <div class="circle-content text-end pe-4">
+                                <h5 class="fw-bold">No hidden costs</h5>
+                                <p class="fw-semibold">We don't overcharge or hit you with
+                                    unexpected charges for our services,
+                                    straining your budget.</p>
+                            </div>
+                            <div class="circle-box rounded-circle">
+                                <img src="images/hidden-dark.png" alt="stat">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-3">
+                        <div class="d-flex flex-column">
+                            <div class="circle-box rounded-circle mx-auto text-center">
+                                <img src="images/chat-dark.png" alt="stat">
+                            </div>
+                            <div class="circle-content text-center">
+                                <h5 class="fw-bold">Communication</h5>
+                                <p class="fw-semibold">we communicate effectively about project progress,
+                                    potential issues, or schedule changes. Clear communication
+                                    is essential for smooth project management and coordination.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="circle-4">
+                        <div class="d-flex">
+                            <div class="circle-box rounded-circle">
+                                <img src="images/quality-dark.png" alt="stat">
+                            </div>
+                            <div class="circle-content ps-4">
+                                <h5 class="fw-bold">Quality workmanship</h5>
+                                <p class="fw-semibold">we don't cut corners! We perform all
+                                    work to industry standards.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="circle-5">
+                        <div class="d-flex">
+                            <div class="circle-box rounded-circle">
+                                <img src="images/relaitive-dark.png" alt="stat">
+                            </div>
+                            <div class="circle-content ps-4">
+                                <h5 class="fw-bold">Reliability</h5>
+                                <p class="fw-semibold">we show up on time and complete
+                                    tasks within the agreed upon schedule
+                                    and reduce disruptions.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex h-100 justify-content-center align-items-center">
+                        <img class="mid" src="images/approach.png" alt="stat">
+                    </div>
+                </div>
+            </div>
+            <div class="appro2-dark d-block d-lg-none">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img class="w-75" src="images/approach.png" alt="stat">
+                </div>
+                <div class="d-flex align-items-center pt-4 ms-4">
+                    <div class="circle-box rounded-circle">
+                        <img src="images/relaitive-dark.png" alt="stat">
+                    </div>
+                    <div class="circle-content ps-4">
+                        <h5 class="fw-bold">Reliability</h5>
+                        <p class="fw-semibold">we show up on time and complete
+                            tasks within the agreed upon schedule
+                            and reduce disruptions.</p>
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center pt-4 ms-4">
+                    <div class="circle-box rounded-circle">
+                        <img src="images/profession-dark.png" alt="stat">
+                    </div>
+                    <div class="circle-content text-start ps-4">
+                        <h5 class="fw-bold">Professionalism</h5>
+                        <p class="fw-semibold">we pride ourselves on our professionalism
+                            through our appearance, behavior, and work ethic.</p>
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center pt-4 ms-4">
+                    <div class="circle-box rounded-circle">
+                        <img src="images/quality-dark.png" alt="stat">
+                    </div>
+                    <div class="circle-content ps-4">
+                        <h5 class="fw-bold">Quality workmanship</h5>
+                        <p class="fw-semibold">we don't cut corners! We perform all
+                            work to industry standards.</p>
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center pt-4 ms-4">
+                    <div class="circle-box rounded-circle">
+                        <img src="images/hidden-dark.png" alt="stat">
+                    </div>
+                    <div class="circle-content text-start ps-4">
+                        <h5 class="fw-bold">No hidden costs</h5>
+                        <p class="fw-semibold">We don't overcharge or hit you with
+                            unexpected charges for our services,
+                            straining your budget.</p>
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center pt-4 ms-4">
+                    <div class="circle-box rounded-circle">
+                        <img src="images/chat-dark.png" alt="stat">
+                    </div>
+                    <div class="circle-content text-start ps-4">
+                        <h5 class="fw-bold">Communication</h5>
+                        <p class="fw-semibold">we communicate effectively about project progress,
+                            potential issues, or schedule changes. Clear communication
+                            is essential for smooth project management and coordination.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- question -->
+    <img src="images/shape-3-dark.png" alt="stat" class="w-100 pt-5 dark-bg">
+    <section class="question-dark pb-3">
+        <div class="container">
+            <h1 class="fw-bold text-center">Frequently Asked Questions</h1>
+            <div class="list-question pt-4">
+                <h5 class="fw-semibold py-3" id="he1-dark"><span class="pe-4 text-secondary">01</span> Do you offer free
+                    quotes? <span class="text-end float-end btn bg-body-secondary rounded-circle" id="p1">+</span><span
+                        class="text-end float-end btn rounded-circle" id="m1">-</span></h5>
+                <p class="text-secondary px-5" id="ans1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he2-dark"><span class="pe-4 text-secondary">02</span> Do you work on
+                    commercial
+                    equipment and refrigeration? <span class="text-end float-end btn bg-body-secondary rounded-circle"
+                        id="p2">+</span><span class="text-end float-end btn rounded-circle" id="m2">-</span></h5>
+                <p class="text-secondary px-5" id="ans2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he3-dark"><span class="pe-4 text-secondary">03</span> What are your rates?
+                    <span class="text-end float-end btn bg-body-secondary rounded-circle" id="p3">+</span><span
+                        class="text-end float-end btn rounded-circle" id="m3">-</span>
+                </h5>
+                <p class="text-secondary px-5" id="ans3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he4-dark"><span class="pe-4 text-secondary">04</span> Are there mileage or
+                    truck
+                    charges added? <span class="text-end float-end btn bg-body-secondary rounded-circle"
+                        id="p4">+</span><span class="text-end float-end btn rounded-circle" id="m4">-</span></h5>
+                <p class="text-secondary px-5" id="ans4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he5-dark"><span class="pe-4 text-secondary">05</span> How quickly can you
+                    come? <span class="text-end float-end btn bg-body-secondary rounded-circle" id="p5">+</span><span
+                        class="text-end float-end btn rounded-circle" id="m5">-</span></h5>
+                <p class="text-secondary px-5" id="ans5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he6-dark"><span class="pe-4 text-secondary">06</span> Can you perform
+                    warranty
+                    repairs for my furnace? <span class="text-end float-end btn bg-body-secondary rounded-circle"
+                        id="p6">+</span><span class="text-end float-end btn rounded-circle" id="m6">-</span></h5>
+                <p class="text-secondary px-5" id="ans6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he7-dark"><span class="pe-4 text-secondary">07</span> Do you provide
+                    backflow
+                    testing? <span class="text-end float-end btn bg-body-secondary rounded-circle" id="p7">+</span><span
+                        class="text-end float-end btn rounded-circle" id="m7">-</span></h5>
+                <p class="text-secondary px-5" id="ans7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+
+                <h5 class="fw-semibold py-3" id="he8-dark"><span class="pe-4 text-secondary">08</span> Do you provide
+                    backflow
+                    testing? <span class="text-end float-end btn bg-body-secondary rounded-circle" id="p8">+</span><span
+                        class="text-end float-end btn rounded-circle" id="m8">-</span></h5>
+                <p class="text-secondary px-5" id="ans8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                    inventore
+                    reiciendis
+                    harum accusamus in sapiente fugiat, rerum ad delectus illo.</p>
+                <hr>
+            </div>
+        </div>
+        <img class="shape4" src="images/shape-wavebottom.png" alt="stat">
+    </section>
+    <img src="images/shape-3-dark.png" alt="stat" class="w-100 pt-5 dark-bg rot">
+
+    <!-- service -->
+    <section class="service pt-5 pb-5 dark-bg">
+
+        <div class="container">
+            <h1 class="text-center light-text fw-bold pb-5">Common Residential Services We Provide</h1>
+            <div class="row g-2 align-items-center pt-4 flex-wrap-reverse">
+                <div class="col-12 col-lg-6">
+                    <div class="service-img reflect-img text-center text-lg-start mx-auto mx-lg-0">
+                        <img class="w-75" src="images/rep-res-dark.png" alt="Furnace Installation Calgary">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="service-content text-center text-lg-start pb-3">
+                        <h2 class="pb-5 fw-bold">Furnace Installation
+                            Calgary
+
+                        </h2>
+                        <p class="pb-5 fw-semibold">STAT Climate Control Solutions is a qualified, licensed
+                            heating company in Calgary. We install and provide furnace replacements with new Energy Star
+                            efficient furnaces that
+                            will help offset the purchase price over time. <br><br>
+
+                            Correct furnace installation requires choosing the correct size of furnace for heating
+                            factoring in the entire home's
+                            square footage.
+                            <br><br>
+
+                            Our expertise and 100% Customer Satisfaction Guarantee assures you that the furnace you
+                            choose will be installed
+                            correctly and you can enjoy home comfort for years to come.
+                        </p>
+                        <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 align-items-center pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="service-content text-center text-lg-start pb-3">
+                        <h2 class="pb-5 fw-bold">Furnace Repair Calgary</h2>
+                        <p class="pb-5 fw-semibold">STAT Climate Control Solutions are licensed and insured
+                            Furnace Repair Experts. We can service and repair most makes and models and we have a 100%
+                            customer satisfaction
+                            guarantee - check our our Google Reviews and hear why
+                            our customers keep coming back for service and repair
+                            on their Heating Systems.
+                            <br><br>
+                            Our service depends on customer loyalty which is why we work hard to make sure we exceed
+                            expectations.
+                        </p>
+                        <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></div></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="service-img text-center text-lg-end mx-auto mx-lg-0">
+                        <img class="w-75" src="images/construct-dark.png" alt="Furnace Repair Calgary">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 align-items-center pt-4 flex-wrap-reverse">
+                <div class="col-12 col-lg-6">
+                    <div class="service-img reflect-img text-center text-lg-start mx-auto mx-lg-0">
+                        <img class="w-75" src="images/power-dark.png" alt="Furnace Maintenance and Servicing">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="service-content text-center text-lg-start pb-3">
+                        <h2 class="pb-5 fw-bold">Furnace Maintenance and Servicing</h2>
+                        <p class="pb-5 fw-semibold">Manufacturer's recommend regular servicing and inspection for
+                            natural gas furnaces. Scheduling regular maintenance,
+                            typically early autumn, to maintain the units peak energy
+                            efficiency and safe operation and extend the life-cycle
+                            of the furnace.
+                            <br><br>
+                            Today's furnaces are far more complex than older units as they feature air inducers,
+                            electronic ignition sensors,
+                            pressure switches, and exhaust flow monitoring.
+                        </p>
+                        <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 24/7 support -->
+    <section class="support-res">
+        <img class="w-100 rot margin-top-1" src="images/shape7-dark.png" alt="stat">
+        <img src="images/shape8.png" alt="stat" class="shap8">
+        <div class="container">
+            <h1 class="text-white fw-bold text-center pt-5 pb-3"><span class="custom">24 Hour Emergency</span>
+                Commercial
+                HVAC
+                Repair</h1>
+            <p class="text-center text-white pt-5 padding">Don't Let a Broken Cooling, Refrigeration or Heating System
+                Ruin Your Day! Have you ever experienced the panic that sets
+                in when your refrigeration or heating system suddenly stops working? The last thing you want is a major
+                disruption in
+                your daily routine. That's why STAT Climate Control Solutions is here to help with emergency repair
+                services, available
+                24 hours, 7 days a week.</p>
+
+            <button class="btn call-btn hours-call mx-auto shadow rounded-pill text-uppercase">
+                <div class="phone-icon-btn"><img src="images/phoneIcon.png" alt="phone"></div>
+                <p class="phone-number-btn px-4 pe-5 fw-semibold text-center res-call-24">Call STAT Climate Control
+                    Solutions at
+                    <span class="number">(403)
+                        226-6066</span> now <br>
+                    and
+                    let us help you get back to a comfortable life.
+                </p>
+
+            </button>
+
+            <div class="position">
+                <div class="mobile-btn-24">
+                    <img class="mobile-phone" src="images/mobile-icon.png" alt="stat">
+                    <a href="(403) 226-6066" class="mobile-btn-phone">Call STAT Climate Control Solutions at
+                        <span class="custom text-danger">(403) 226-6066</span> now and let us help you
+                        get back to a comfortable life.</a>
+                </div>
+            </div>
+        </div>
+        <img class="w-100" src="images/shape7-dark.png" alt="stat">
+        <div class="dark-bg py-4 img-maintin"></div>
+    </section>
+
+    <!-- air condition -->
+    <section class="hit pt-4 dark-bg">
+        <div class="container">
+            <div class="row g-1 align-items-center pt-2">
+                <div class="col-12 col-lg-6">
+                    <div class="air-content">
+                        <h1 class="light-text text-center text-lg-start fw-bold">Air Conditioning Installation Calgary
+                        </h1>
+                        <p class="light-text text-center text-lg-start pt-3 pb-5">STAT Climate Control Solutions are
+                            qualified, licensed
+                            professionals. Installation for central air conditioners requires expertise to increase the
+                            lifespan, maximize energy
+                            efficiency and to keep the unit running as designed. Our technical
+                            expertise and 100% Customer Satisfaction Guarantee assures you that the air conditioning
+                            will be installed correctly and
+                            you can enjoy home comfort for years to come.
+                        </p>
+                        <div class="text-center text-lg-start mx-auto mx-lg-0 pb-4">
+                            <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="elec text-center mx-auto text-lg-end mx-lg-0">
+                        <img class="w-75" src="images/ac-res-dark.png" alt="Air Conditioning Installation Calgary">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-1 align-items-center flex-wrap-reverse pt-3">
+                <div class="col-12 col-lg-6">
+                    <div class="elec reflect-img text-center mx-auto text-lg-start mx-lg-0">
+                        <img class="w-75" src="images/electric-res-dark.png" alt="Air Conditioning Repair Calgary">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="air-content">
+                        <h1 class="light-text text-center text-lg-start fw-bold">Air Conditioning Repair Calgary</h1>
+                        <p class="light-text text-center text-lg-start pt-3 pb-5">STAT Climate Control Solutions are
+                            licensed and insured
+                            Air Conditioning Repair Experts. We can service and repair most makes and models and we have
+                            a 100% customer
+                            satisfaction guarantee - check our our Google Reviews
+                            and hear why our customers keep coming back for
+                            service and repair on their Air Conditioning Systems.
+                            <br><br>
+                            Our service depends on customer loyalty which is why
+                            we work hard to make sure we exceed expectations and respect your home and your loyalty.
+                        </p>
+                        <div class="text-center text-lg-start mx-auto mx-lg-0 pb-4">
+                            <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-1 align-items-center pt-4">
+                <div class="col-12 col-lg-6">
+                    <div class="air-content">
+                        <h1 class="light-text text-center text-lg-start fw-bold">Air Conditioning Maintenance and
+                            Servicing</h1>
+                        <p class="light-text text-center text-lg-start pt-3 pb-5">Manufacturer’s recommend regular
+                            servicing and inspection for air conditioners. Scheduling regular maintenance,
+                            typically early spring, to maintain the units peak energy efficiency and safe operation and
+                            extend the life-cycle of the
+                            air
+                            conditioner.
+                        </p>
+                        <div class="text-center text-lg-start mx-auto mx-lg-0 pb-4">
+                            <a href="#" class="btn my-btn learn-more rounded-pill">Learn More <div class="arrow"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="elec text-center mx-auto text-lg-end mx-lg-0">
+                        <img class="w-75" src="images/air-maintain-dark.png" alt="Air Conditioning Installation Calgary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog dark-bg padding-90-top pb-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-10">
+                    <h2 class="fw-bold light-text text-center text-lg-start">Residential Blog</h2>
+                </div>
+                <div class="col-12 col-lg-2 d-none d-lg-block">
+                    <div class="row justify-content-center">
+                        <div class="text-end col-6"><button id="prev2"
+                                class="btn arrow-btn dark-bg shadow-dark rounded-circle border-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                </svg></button>
+                        </div>
+                        <div class="text-start col-6"><button id="next2"
+                                class="btn arrow-btn dark-bg shadow-dark rounded-circle border-5"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-mine">
+                <div class="contentsli" id="content2">
+                    <div class="contentst py-3 px-2">
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">How to Extend the Life of Your
+                                        HVAC System</h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-2-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">Repair or Replace Your Furnace?</h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">How to Extend the Life of Your
+                                        HVAC System</h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-2-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">Repair or Replace Your Furnace?
+                                    </h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">How to Extend the Life of Your
+                                        HVAC System</h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 shr">
+                            <div class="card-about2 dark-card-shadow rounded-5">
+                                <div class="card-banner rounded-top-5">
+                                    <img src="images/blog-2-res.jpg" alt="blog" class="object">
+                                </div>
+                                <div class="card-about-2">
+                                    <a href="#"
+                                        class="text-secondary d-block py-4 ps-5 text-decoration-none">Residential
+                                        HVAC</a>
+                                    <h3 class="light-text ps-5 pe-2 fw-bold">Repair or Replace Your Furnace?
+                                    </h3>
+                                    <a href="#" class="py-3 d-block text-decoration-none text-danger fw-bold ps-5">Read
+                                        More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-block mx-auto text-center d-lg-none">
+                <div class="row justify-content-center">
+                    <div class="text-end col-6"><button id="prev3"
+                            class="btn arrow-btn dark-bg shadow-dark rounded-circle border-5"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                            </svg></button>
+                    </div>
+                    <div class="text-start col-6"><button id="next3"
+                            class="btn arrow-btn dark-bg shadow-dark rounded-circle border-5"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-dark">
+        <img class="w-100 rot img-maintin" src="images/shape7-dark.png" alt="stat">
+        <h1 class="text-center fw-bold text-white">Call (403) 226-6066 for 24-Hour Emergency <br class="br">
+            Residential HVAC and ALL Mechanical Services</h1>
+        <button class="btn call-btn-2 rounded-pill bg-dark">
+            <div class="phone-icon-btn-2"><img src="images/black-phone.png" alt="phone"></div>
+            <p class="phone-number-btn-2"><b>CALL US 24/7</b><br><b>(403) 226-6066</b>
+            </p>
+        </button>
+        <img class="w-100 img-maintin" src="images/contact-dark.png" alt="stat">
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row g-2 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h3 class="light-text text-center fw-bold">Subscribe to our Monthly Newsletter</h3>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control rounded-pill py-2 light-bg dark-text"
+                            placeholder="Enter Your Email Address" aria-label="email" aria-describedby="button-addon2">
+                        <button class="btn btn-danger rounded-circle btn-group-2" type="button" id="button-addon2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 pt-5">
+                <div class="col-12 col-lg-4">
+                    <div class="logo-area">
+                        <a href="index.html"><img class="w-50" src="images/logo-dark.png" alt="stat"></a>
+                        <div class="pt-5 d-flex g-4">
+                            <a href="#" class="btn social rounded-circle dark-bg shadow-dark m-2"><img src="images/face-dark.png"
+                                    alt="facebook"></a>
+                            <a href="#" class="btn social rounded-circle dark-bg shadow-dark m-2"><img src="images/in-dark.png"
+                                    alt="in"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h4><span class="custom">Na</span>vigation</h4>
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <ul class="p-0 pt-3 footer-li">
+                                <li>Home</li>
+                                <li>About Us</li>
+                                <li>Careers</li>
+                                <li>Resources</li>
+                                <li>Residential</li>
+                                <li> Projects</li>
+                                <li> Sectors / Industries</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <ul class="p-0 pt-3 footer-li">
+                                <li>Innovation / Solutions</li>
+                                <li>Blog</li>
+                                <li>New Construction & Retrofits</li>
+                                <li>Services & Maintenance</li>
+                                <li>Commercial</li>
+                                <li>Industrial</li>
+                                <li>Residential</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h4><span class="custom">Su</span>pport</h4>
+                    <div class="row g-2 pt-3">
+                        <div class="col-2 text-center"><img src="images/add-dark.png" alt="add"></div>
+                        <div class="col-10">
+                            <p class="p-0 m-0 pb-2 text-body-secondary">Address:</p>
+                            <p class="p-0 m-0 pb-2 light-text fw-semibold">Bay 14 2221 41 Ave N.E.</p>
+                        </div>
+                    </div>
+                    <div class="row g-2 pt-3">
+                        <div class="col-2 text-center"><img src="images/mail-dark.png" alt="mail"></div>
+                        <div class="col-10">
+                            <p class="p-0 m-0 pb-2 text-body-secondary">Email:</p>
+                            <p class="p-0 m-0 pb-2 light-text"><span
+                                    class="custom text-danger">info@statclimate.ca</span></p>
+                        </div>
+                    </div>
+                    <div class="row g-2 pt-3">
+                        <div class="col-2 text-center"><img src="images/phone-dark.png" alt="phone"></div>
+                        <div class="col-10">
+                            <p class="p-0 m-0 pb-2 text-body-secondary">Phone:</p>
+                            <p class="p-0 m-0 pb-2 light-text fw-semibold">(403) 226-6066</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="pt-5 text-center fw-light">© 2023 <b>STAT Climate Control Solutions</b>. All rights reserved. |
+                Terms and Conditions | Privacy Policy</h5>
+        </div>
+    </footer>
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

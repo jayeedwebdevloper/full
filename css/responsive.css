@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1600px) {
+    .hero-about {
+        background-image: url(../images/hero-about-1500.png);
+    }
+    
+}
 @media only screen and (min-width: 1400px) {
     .btn-4 {
         width: 269px;
@@ -256,7 +262,7 @@
     }
 
     .btn-mode-dark {
-        padding: 0 5px;
+        padding: 0 4px;
     }
 
 
@@ -972,6 +978,10 @@
         width: 35px;
         height: 35px;
     }
+    #dark {
+        width: 35px;
+        height: 35px;
+    }
 
     .maintenance {
         background-image: linear-gradient(to top, #e92428,
@@ -1410,13 +1420,14 @@
     }
 
     .btn-mode {
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
     }
 
     .btn-mode-dark {
         height: 40px;
         width: 40px;
+        padding: 6px;
     }
 }
 

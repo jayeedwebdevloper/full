@@ -403,10 +403,11 @@ section {
 .hero-about {
     background: url(../images/hero-about.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: 90%;
+    background-position-y: top;
+    background-position-x: right;
     object-fit: cover;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .res {

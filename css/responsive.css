@@ -1,3 +1,8 @@
+@media only screen and (min-width: 2000px) {
+    .about-shap {
+        margin-top: 7% !important;
+    }
+}
 @media only screen and (min-width: 1600px) {
     .hero-about {
         background-image: url(../images/hero-about-1500.png);
@@ -929,7 +934,9 @@
         transform: rotateX(180deg);
         transform: rotateY(180deg);
     }
-
+    .about-shap {
+        margin-top: -12% !important;
+    }
     .hr-card {
         display: block;
     }

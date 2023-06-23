@@ -16,10 +16,12 @@ body {
 
 .logo {
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 48%;
+    width: 45%;
 }
 
 .contact-menu {
@@ -33,18 +35,17 @@ body {
     background: #fff !important;
     position: relative;
     gap: 8px;
-    height: 65px;
-    padding: 7px;
+    height: 55px;
+    padding: 4px;
     padding-right: 15px;
-    margin-top: 7px;
 }
 
 .call-btn-2 {
     display: flex;
     position: relative;
     gap: 8px;
-    height: 65px;
-    padding: 7px;
+    height: 60px;
+    padding: 4px;
     padding-right: 30px;
     margin: auto;
     margin-top: 2%;
@@ -63,21 +64,22 @@ body {
     background: linear-gradient(to right, #e92428, #b02022);
     position: relative;
     gap: 8px;
-    height: 65px;
-    padding: 7px;
+    height: 60px;
+    padding: 5px;
     padding-right: 20px;
     margin-top: 55px;
-    margin-left: 35px;
     align-items: center;
 }
 
 .location-icon-btn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
+}
+.location-icon-btn img {
+    width: 100%;
 }
 
 .location-btn-content {
@@ -99,26 +101,33 @@ body {
     left: 50%;
     transform: translate(-50%);
     bottom: 10%;
+    font-size: 12px;
 }
 
 .phone-icon-btn {
     background: #000;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
 }
+.phone-icon-btn img {
+    width: 50%;
+}
 
 .phone-icon-btn-dark {
     background: #fff;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+}
+.phone-icon-btn-dark img {
+    width: 50%;
 }
 
 .phone-icon-btn-2 {
@@ -140,6 +149,8 @@ body {
     padding: 0;
     margin: 0;
     text-align: start;
+    font-size: 12px;
+    align-self: center;
 }
 
 .phone-number-btn-2 {
@@ -147,6 +158,8 @@ body {
     padding: 0;
     margin: 0;
     text-align: start;
+    font-size: 12px;
+    align-self: center;
 }
 
 .number-btn {
@@ -158,12 +171,12 @@ body {
 }
 
 .line-btn {
-    width: 90px;
+    width: 55px;
     height: 2px;
     background: #d22126;
     position: absolute;
     right: 20px;
-    top: 40px;
+    top: 30px;
 }
 
 .btn-phone-icon {
@@ -182,36 +195,36 @@ body {
 }
 
 .btn-mode {
-    border: 2px solid #fff !important;
+    border: 1.5px solid #fff !important;
     background: #ffffff63 !important;
     color: #8c9296 !important;
     display: flex;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     align-items: center;
     gap: 8px;
-    width: 125px;
-    height: 45px;
-    padding: 0 5px;
+    width: 105px;
+    height: 35px;
+    padding: 0 3px;
 }
 
 .btn-mode-dark {
-    border: 2px solid #ffffff50 !important;
+    border: 1.5px solid #ffffff50 !important;
     background: #00000073 !important;
     color: #8c9296 !important;
     display: flex;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     align-items: center;
     gap: 8px;
-    width: 125px;
-    height: 45px;
-    padding: 0 5px;
+    width: 105px;
+    height: 35px;
+    padding: 0 3px;
 }
 
 #light {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #fff;
     color: #000;
     padding: 5px;
@@ -220,8 +233,8 @@ body {
 }
 
 #light-dark {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #00000000;
     color: #ffffff;
     padding: 5px;
@@ -239,8 +252,8 @@ body {
 }
 
 #dark {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #bcc3c8;
     color: #5d6164;
     padding: 5px;
@@ -249,8 +262,8 @@ body {
 }
 
 #dark-dark {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #ffffff;
     color: #000000;
     padding: 5px;
@@ -297,9 +310,8 @@ section {
 
 
 .menu {
-    width: 60px;
-    height: 60px;
-    margin-top: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 .btn-2 {
@@ -386,6 +398,15 @@ section {
     background-position: top;
     object-fit: cover;
     padding-top: 15%;
+}
+
+.hero-about {
+    background: url(../images/hero-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    padding-top: 10%;
 }
 
 .res {
@@ -1132,6 +1153,11 @@ html {
     margin: 10% 0;
 }
 
+.my-btn.call-about {
+    width: 140px;
+    height: 50px;
+}
+
 .res-contact {
     background: #fff !important;
     color: #d22126;
@@ -1174,6 +1200,11 @@ html {
 .my-btn:hover {
     background: linear-gradient(to left, #e92428, #b02022);
     width: 180px;
+    color: #fff;
+}
+
+.my-btn.call-about:hover {
+    width: 150px;
     color: #fff;
 }
 
@@ -1325,18 +1356,35 @@ html {
 .margin-bottom-1 {
     margin-bottom: -1px;
 }
+.margin-left-30 {
+    margin-left: 30px;
+}
 
 .padding-90-top {
     padding-top: 90px;
 }
+
 .border-right {
     border-right: 2px solid #e5e5e5;
 }
+
 .border-right-dark {
     border-right: 2px solid #333333;
 }
+
 .res-dark {
     background-color: #0e0e0e;
+}
+
+.fs-17 {
+    font-size: 17px !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+.fs-10 {
+    font-size: 10px !important;
 }
 
 /* end */

@@ -10,6 +10,7 @@
         padding-top: 26%;
         padding-bottom: 28%;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 26%;
         padding-bottom: 28%;
@@ -40,6 +41,7 @@
     .maintenance-res .maintain .details {
         font-size: 30px;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 24%;
         padding-bottom: 24%;
@@ -80,6 +82,7 @@
     .maintenance-res .maintain .details {
         font-size: 20px;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 31% !important;
         padding-bottom: 31% !important;
@@ -123,6 +126,7 @@
     .maintenance-res .maintain .details {
         font-size: 18px;
     }
+
     .maintenance-dark-res .maintain .head {
         font-size: 40px;
     }
@@ -146,6 +150,7 @@
         padding-top: 27% !important;
         padding-bottom: 27% !important;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 27% !important;
         padding-bottom: 27% !important;
@@ -174,6 +179,7 @@
         padding-top: 25% !important;
         padding-bottom: 25% !important;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 25% !important;
         padding-bottom: 25% !important;
@@ -209,6 +215,7 @@
     .maintenance-res .maintain .details {
         font-size: 18px;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 25% !important;
         padding-bottom: 25% !important;
@@ -245,7 +252,7 @@
     }
 
     .btn-mode {
-        padding: 0 5px;
+        padding: 0 4px;
     }
 
     .btn-mode-dark {
@@ -314,6 +321,7 @@
         padding-top: 23% !important;
         padding-bottom: 23% !important;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 23% !important;
         padding-bottom: 23% !important;
@@ -343,6 +351,7 @@
         padding-top: 22% !important;
         padding-bottom: 22% !important;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 22% !important;
         padding-bottom: 22% !important;
@@ -367,6 +376,7 @@
     .maintenance-res .maintain .details {
         font-size: 15px;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 24% !important;
         padding-bottom: 24% !important;
@@ -572,6 +582,11 @@
         height: 45px;
     }
 
+    .my-btn.call-about {
+        width: 130px;
+        height: 45px;
+    }
+
     .arrow {
         height: 35px;
         width: 35px;
@@ -586,25 +601,10 @@
         margin-left: 30px;
     }
 
-    .call-btn {
-        height: 55px;
-        padding: 5px;
-        padding-right: 12px;
-        margin-top: 7px;
-    }
-
     .call-btn-2 {
         margin-top: 3%;
     }
 
-    .phone-icon-btn {
-        height: 45px;
-        width: 45px;
-    }
-
-    .phone-icon-btn img {
-        width: 50%;
-    }
 
     .phone-number-btn {
         font-size: 13px;
@@ -614,15 +614,6 @@
         font-size: 15px;
     }
 
-    .line-btn {
-        top: 35px;
-    }
-
-    .menu {
-        width: 55px;
-        height: 55px;
-        margin-top: 2px;
-    }
 
     .location-btn img {
         padding-right: 0;
@@ -693,6 +684,14 @@
     .appoint-button .arrow {
         margin-left: 50px;
     }
+
+    .hero-about {
+        background: url(../images/hero-about-1200.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding-top: 8%;
+    }
 }
 
 @media only screen and (max-width: 1192px) {
@@ -761,13 +760,7 @@
         transform: translate(0, 160%);
     }
 
-    .btn-mode {
-        width: 120px;
-    }
 
-    .btn-mode-dark {
-        width: 120px;
-    }
     .res-call-24 {
         padding-top: 2px !important;
         font-size: 11px !important;
@@ -910,12 +903,15 @@
     .btn-phone-icon {
         display: none;
     }
+
     .hr-card {
         display: none;
     }
+
     .border-right {
         border-right: 2px solid #e5e5e5;
     }
+
     .border-right-dark {
         border-right: 2px solid #333333;
     }
@@ -927,15 +923,18 @@
         transform: rotateX(180deg);
         transform: rotateY(180deg);
     }
+
     .hr-card {
         display: block;
     }
-        .border-right {
-            border-right: 0;
-        }
-        .border-right-dark {
-            border-right: 0;
-        }
+
+    .border-right {
+        border-right: 0;
+    }
+
+    .border-right-dark {
+        border-right: 0;
+    }
 
     .d-mobile {
         display: none;
@@ -1071,6 +1070,7 @@
     .maintenance-res .maintain .sub-head {
         text-align: center;
     }
+
     .maintenance-dark-res .maintain {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
@@ -1117,6 +1117,11 @@
     }
 
     .hero-res {
+        background: transparent;
+        text-align: center;
+    }
+
+    .hero-about {
         background: transparent;
         text-align: center;
     }
@@ -1456,9 +1461,10 @@
         font-size: 20px;
         line-height: 35px;
     }
+
     .mobile-phone {
         top: -26%;
-    } 
+    }
 
     .card-about {
         height: 400px;
@@ -1481,23 +1487,24 @@
     .cont a {
         font-size: 12px;
     }
-        .appoint-button {
-            width: 320px;
-            padding-left: 20px;
-        }
-    
-        .appoint-button:hover {
-            width: 330px;
-            background: #000;
-        }
-    
-        .appoint-button:hover .arrow {
-            margin-left: 33px;
-        }
-    
-        .appoint-button .arrow {
-            margin-left: 25px;
-        }
+
+    .appoint-button {
+        width: 320px;
+        padding-left: 20px;
+    }
+
+    .appoint-button:hover {
+        width: 330px;
+        background: #000;
+    }
+
+    .appoint-button:hover .arrow {
+        margin-left: 33px;
+    }
+
+    .appoint-button .arrow {
+        margin-left: 25px;
+    }
 
 }
 
@@ -1688,24 +1695,25 @@
     .brand-icon img {
         width: 75%;
     }
-         .appoint-button {
-             width: 290px;
-             padding-left: 15px;
-             font-size: 15px;
-         }
-    
-         .appoint-button:hover {
-             width: 300px;
-             background: #000;
-         }
-    
-         .appoint-button:hover .arrow {
-             margin-left: 23px;
-         }
-    
-         .appoint-button .arrow {
-             margin-left: 13px;
-         }
+
+    .appoint-button {
+        width: 290px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+    .appoint-button:hover {
+        width: 300px;
+        background: #000;
+    }
+
+    .appoint-button:hover .arrow {
+        margin-left: 23px;
+    }
+
+    .appoint-button .arrow {
+        margin-left: 13px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
